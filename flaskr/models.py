@@ -10,6 +10,7 @@ class User(db.Model):
     def __repr__(self):
         return '<User %r>' % self.username
 
+# Relations model
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(80), nullable=False)
@@ -24,7 +25,6 @@ class Post(db.Model):
 
     def __repr__(self):
         return '<Post %r>' % self.title
-
 
 class Category(db.Model):
     id = db.Column(db.Integer, primary_key=True)
