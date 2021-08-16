@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 # will be deprecated by default in future
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-\
+
 # set as temp db
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 
